@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizApp</title>
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/game file/game.css">
+</head>
+<body>
+    <div class="container">
+                        <!--timer-->
+                        <div id="clockdiv">
+                            Minutes: <span class="minutes"></span><br>
+                            Seconds: <span class="seconds"></span>
+                        </div>
+                        
+        <div id="game" class="justify-center flex-column">
+            <div id="display">
+                <div class="display-item">
+                    <p id="progressText" class="display-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="display-item">
+                    <p class="display-prefix">
+                        Score
+                    </p>
+                    <h1 class="display-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+
+
+
+
+            </div>
+            <h1 id="question">What is project diy?</h1>
+            <div class="option-container">
+                <p class="option-prefix">A.</p>
+                <p class="option-text" data-number="1">Project did it you</p>
+            </div>
+            <div class="option-container">
+                <p class="option-prefix">B.</p>
+                <p class="option-text" data-number="2">Project done it yourself</p>
+            </div>
+            <div class="option-container">
+                <p class="option-prefix">C.</p>
+                <p class="option-text" data-number="3">Project do it yourself</p>
+            </div>
+            <div class="option-container">
+                <p class="option-prefix">D.</p>
+                <p class="option-text" data-number="4">All of the above</p>
+            </div>
+        </div>
+    </div>
+    <script src="/game file/game.js"></script>
+    <script src="./timer.js"></script>
+</body>
+</html>
